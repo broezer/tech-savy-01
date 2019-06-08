@@ -1,9 +1,16 @@
 body {
   font-family: "Courier", serif;
-  background: #9014ff;
-  font-size: 10px; }
+  background: #00ffd5;
+  font-size: 10px;
+  color: white; }
 
 h1 {
   text-align: center;
-  font-size: 3vw;
-  margin-top: 5vh; }
+  margin-top: 5vh;
+  font-size: 21px; }
+  @media screen and (min-width: 600px) {
+    h1 {
+      font-size: calc(21px + 21 * (100vw - 600px) / 600); } }
+  @media screen and (min-width: 1200px) {
+    h1 {
+      font-size: 42px; } }
